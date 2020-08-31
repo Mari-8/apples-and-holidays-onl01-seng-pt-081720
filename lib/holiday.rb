@@ -1,4 +1,4 @@
-require 'pry'
+srequire 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
@@ -66,11 +66,8 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each do |season, holiday|
-    holiday.each do |holiday_name, supply|
-      puts "#{season.capitalize}:"
-            puts "  #{holiday_name.capitalize}:" + " " + "#{supply.join(", ")}"
-    end
-  end
+    puts "#{season.to_s.capitalize}"
+      
 end
 
 
